@@ -4,7 +4,7 @@ import pandas as pd
 import ast
 
 # cargar datos
-df = pd.read_csv('Dataset.csv', sep=',', encoding='utf-8', decimal='.')
+df = pd.read_csv('Dataset.zip', sep=',', encoding='utf-8', decimal='.')
 
 # eliminar duplicados
 df.drop_duplicates(inplace=True)
