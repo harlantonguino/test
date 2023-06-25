@@ -30,11 +30,12 @@ from fastapi import FastAPI
 #.\venv\Scripts\activate
 #uvicorn main:app --reload
 
-app = FastAPI()
+app = FastAPI(title='PI1_MLOPS Harlan Tonguino PT01',
+              description='API: 7 endpoints')
 
 @app.get('/')        
 def welcome():
-    return {'mensaje': 'Hola'}
+    return {'¡Hola!': 'por favor dirigete a /docs'}
 
 @app.get('/cantidad_filmaciones_mes/{mes}')
 def cantidad_filmaciones_mes(mes:str):
